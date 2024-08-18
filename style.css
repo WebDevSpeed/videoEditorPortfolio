@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Header Styles */
+header {
+    /* background-color: #222; */
+    padding: 15px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section Styles */
+.hero {
+    /* background-image: url("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+/* About Section Styles */
+.about {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    flex: 1 0 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Skills Section Styles */
+.skills {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    flex: 1 0 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Work Section Styles */
+.work {
+    padding: 50px 0;
+}
+
+.work-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item {
+    flex: 1 0 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.work-item-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+/* Media Queries (Optional) */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .services,
+    .skills,
+    .work-items,
+    .contact {
+        flex-direction: column;
+    }
+
+    .service-item,
+    .skill-item,
+    .work-item {
+        width: 100%;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
